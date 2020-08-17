@@ -1,2 +1,2 @@
-//@prepros-append samples.js;
+//@prepros-append script.js;
 //****************************************

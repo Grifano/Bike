@@ -2,7 +2,7 @@
 <!-- TODO: -->
 D--Prepare;
 D--GitInit;
---Fonts;
+D--Fonts;
 --First screen:
 - Cut img;
 - Make fullscreen mainblock;
