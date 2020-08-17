@@ -1,0 +1,29 @@
+>>>Start: 17.08.20 21:00...
+<!-- TODO: -->
+D--Prepare;
+D--GitInit;
+--Fonts;
+--First screen:
+- Cut img;
+- Make fullscreen mainblock;
+--Menu:
+- Cut icon;
+- Make menu-list;
+- Adaptive;
+- Make burger;
+- Make show/hide menu mobile-screen;
+
+<!-- ********************************************************* -->
+<!--!- To fix: -->
+-
+<!-- ********************************************************* -->
+<!--?- #:>Test before prodaction: -->
+- jquery re-include!;
+- adaptive;
+- link;
+- hover;
+- add more content for testing block;
+- walidator;
+- loading speed;
+- crosbrausers;
+- refacturing code;

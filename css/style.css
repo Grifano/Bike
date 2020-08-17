@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-family: "Lato";
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "Lato";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.test {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+}
+.test__column {
+  flex: 1 0 auto;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.burger span, .burger::before, .burger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background-color: #000;
+  transition: all 0.3s ease 0s;
+}
+.burger::before {
+  top: 0;
+}
+.burger.active::before {
+  top: 9px;
+  transform: rotate(45deg);
+}
+.burger::after {
+  bottom: 0;
+}
+.burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+.burger span {
+  top: 9px;
+}
+.burger.active span {
+  display: none;
+}
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+  }
+}
+
+.menu {
+  display: none;
+}
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ibg img {
+  display: none;
+}
+
+.spoilers {
+  padding: 50px;
+  background-color: #ccc;
+}
+
+.spoilers__item {
+  margin: 0px 0px 20px 0px;
+}
+
+.spoilers__title {
+  padding: 0px 0px 0px 30px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+.spoilers__title::before,
+.spoilers__title::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.spoilers__title::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.spoilers__title::after {
+  left: 7px;
+  transform: rotate(-45deg);
+}
+
+.spoilers__title.active::before,
+.spoilers__title.active::after {
+  background-color: red;
+}
+
+.spoilers__title.active::before {
+  transform: rotate(-45deg);
+}
+
+.spoilers__title.active::after {
+  transform: rotate(45deg);
+}
+
+.spoilers__text {
+  display: none;
+  font-size: 12px;
+  padding: 10px 0px 0px 0px;
+}
+
+.spoilers {
+  padding: 50px;
+  background-color: #ccc;
+}
+
+.spoilers__item {
+  margin: 0px 0px 20px 0px;
+}
+
+.spoilers__title {
+  padding: 0px 0px 0px 30px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+.spoilers__title::before,
+.spoilers__title::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+.spoilers__title::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.spoilers__title::after {
+  left: 7px;
+  transform: rotate(-45deg);
+}
+
+.spoilers__title.active::before,
+.spoilers__title.active::after {
+  background-color: red;
+}
+
+.spoilers__title.active::before {
+  transform: rotate(-45deg);
+}
+
+.spoilers__title.active::after {
+  transform: rotate(45deg);
+}
+
+.spoilers__text {
+  display: none;
+  font-size: 12px;
+  padding: 10px 0px 0px 0px;
+}
