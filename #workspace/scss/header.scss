@@ -1,0 +1,51 @@
+.header {
+  border: 1px solid red;
+  padding: 40px 0px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  &__burger {
+  }
+
+  &__menu {
+  }
+}
+.menu {
+  border: 1px solid red;
+  display: inline-flex;
+  &__list {
+    display: flex;
+    align-items: center;
+    &_l {
+      margin: 0px 40px 0px 0px;
+      li {
+        margin: 0px 20px;
+      }
+    }
+    &_r {
+      margin: 0px 0px 0px 40px;
+      li {
+        margin: 0px 20px;
+        &::after {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 2px;
+          background-color: #4d4959;
+        }
+      }
+    }
+  }
+  &__link {
+    font-size: 13px;
+    color: $burger_icon;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 15px;
+    &_logo {
+    }
+  }
+}

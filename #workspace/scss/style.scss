@@ -12,14 +12,7 @@ $fontfamily: "Lato";
 //===+++/Файл с обнулением+++===
 //----------------------------------------
 //===+++Переменные+++===
-$screen-xl: 1200px;
-$screen-bg: 1024px;
-$screen-lg: 992px;
-$screen-md: 768px;
-$screen-sm: 576px;
-$screen-li: 480px;
-$screen-min: 320px;
-
+$burger_icon: #4d4959;
 $col: #00b5ab;
 //===+++/Переменные+++===
 //----------------------------------------
@@ -57,9 +50,22 @@ $col: #00b5ab;
 .content {
 	flex: 1 0 auto;
 }
-.test {
-	display: block;
-	font-size: 48px;
+.main-screen {
+	min-height: 100vh;
+	position: relative;
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 }
 
 //===+++/Основные стили+++===

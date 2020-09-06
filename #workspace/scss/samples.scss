@@ -1,7 +1,6 @@
 //===+++Burger+++===
-$burger_icon: #000;
 .burger {
-  display: none;
+  display: block;
   position: relative;
   width: 30px;
   height: 20px;
@@ -22,21 +21,21 @@ $burger_icon: #000;
   &::before {
     top: 0;
   }
-  &.active::before {
+  &._show::before {
     top: 9px;
     transform: rotate(45deg);
   }
   &::after {
     bottom: 0;
   }
-  &.active::after {
+  &._show::after {
     transform: rotate(-45deg);
     bottom: 9px;
   }
   span {
     top: 9px;
   }
-  &.active span {
+  &._show span {
     display: none;
   }
   @media (max-width: 767px) {
@@ -44,8 +43,8 @@ $burger_icon: #000;
   }
 }
 .menu {
-  display: none;
-  &.active {
+  // display: none;
+  &._show {
   }
 }
 //===+++/Burger+++===
