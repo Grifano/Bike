@@ -1,5 +1,5 @@
 .header {
-  border: 1px solid red;
+  background-color: #fff;
   padding: 40px 0px;
   text-align: center;
   position: fixed;
@@ -14,8 +14,7 @@
   }
 }
 .menu {
-  border: 1px solid red;
-  display: inline-flex;
+    display: inline-flex;
   &__list {
     display: flex;
     align-items: center;
@@ -41,7 +40,7 @@
   }
   &__link {
     font-size: 13px;
-    color: $burger_icon;
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 15px;
