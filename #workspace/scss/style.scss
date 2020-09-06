@@ -1,45 +1,92 @@
-//===+++Шрифты+++===
+//===+++Fonts+++===
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @import "_fonts";
-//===+++/Шрифты+++===
+//===+++/Fonts+++===
 //----------------------------------------
-//===+++Шрифт по умолчанию+++===
+//===+++Default font+++===
 $fontfamily: "Lato";
-//===+++/Шрифт по умолчанию+++===
+//===+++/Default font+++===
 //----------------------------------------
-//===Файл с обнулением===
+//===Nullstyle===
 @import "_nullstyle";
-//===+++/Файл с обнулением+++===
+//===+++/Nullstyle+++===
 //----------------------------------------
-//===+++Переменные+++===
+//===+++Variables+++===
 $burger_icon: #4d4959;
 $col: #00b5ab;
-//===+++/Переменные+++===
+//===+++/Variables+++===
 //----------------------------------------
-//===+++Миксины+++===
+//===+++Mixins+++===
 @import "_mixins";
-//===+++/Миксины+++===
+//===+++/Mixins+++===
 //----------------------------------------
-//===+++/Зона контента+++===
+//===+++Content area+++===
 .container {
 	max-width: 1260px;
 	margin: 0 auto;
 	padding: 0px 15px;
 	margin: 0px 20px;
 }
-//===+++/Зона контента+++===
+//===+++/Content area+++===
 //----------------------------------------
-//===+++Стили для шапки и подвала+++===
+//===+++Header and footer styles+++===
 @import "_header";
 @import "_footer";
-//===+++/Стили для шапки и подвала+++===
+//===+++/Header and footer styles+++===
 //****************************************
 
-//===+++Повторяющиеся стили+++===
-
-//===+++/Повторяющиеся стили+++===
+//===+++Ready to use code+++===
+.burger {
+	display: block;
+	position: relative;
+	width: 30px;
+	height: 20px;
+	top: 0;
+	right: 0;
+	z-index: 999;
+	cursor: pointer;
+	span,
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		left: 0;
+		background-color: $burger_icon;
+		transition: all 0.3s ease 0s;
+	}
+	&::before {
+		top: 0;
+	}
+	&._active::before {
+		top: 9px;
+		transform: rotate(45deg);
+	}
+	&::after {
+		bottom: 0;
+	}
+	&._active::after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	span {
+		top: 9px;
+	}
+	&._active span {
+		display: none;
+	}
+	@media (max-width: 767px) {
+		display: block;
+	}
+}
+//===+++/Ready to use code+++===
 //----------------------------------------
-//===+++Основные стили+++===
+//===+++Repeating styles+++===
+
+//===+++/Repeating styles+++===
+//----------------------------------------
+//===+++Main styles+++===
 
 .wrapper {
 	width: 100%;
@@ -50,7 +97,6 @@ $col: #00b5ab;
 }
 .content {
 	flex: 1 0 auto;
-margin: 0px 20px;
 }
 .main-screen {
 	min-height: 100vh;
@@ -70,9 +116,6 @@ margin: 0px 20px;
 	}
 }
 
-//===+++/Основные стили+++===
+//===+++/Main styles+++===
 
 //****************************************
-//===+++Отдельный файл с готовыми стилями===
-@import "_samples";
-//===+++/Отдельный файл с готовыми стилями+++===
