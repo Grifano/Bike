@@ -12,8 +12,7 @@ $fontfamily: "Lato";
 //===+++/Nullstyle+++===
 //----------------------------------------
 //===+++Variables+++===
-$burger_icon: #4d4959;
-$col: #00b5ab;
+$menuColor: #4d4959;
 //===+++/Variables+++===
 //----------------------------------------
 //===+++Mixins+++===
@@ -25,7 +24,6 @@ $col: #00b5ab;
 	max-width: 1260px;
 	margin: 0 auto;
 	padding: 0px 15px;
-	margin: 0px 20px;
 }
 //===+++/Content area+++===
 //----------------------------------------
@@ -37,12 +35,12 @@ $col: #00b5ab;
 
 //===+++Ready to use code+++===
 .burger {
-	display: block;
-	position: relative;
+	display: none;
+	position: fixed;
 	width: 30px;
 	height: 20px;
-	top: 0;
-	right: 0;
+	top: 35px;
+	left: 35px;
 	z-index: 999;
 	cursor: pointer;
 	span,
@@ -53,11 +51,15 @@ $col: #00b5ab;
 		width: 100%;
 		height: 3px;
 		left: 0;
-		background-color: $burger_icon;
+		background-color: $menuColor;
 		transition: all 0.3s ease 0s;
 	}
 	&::before {
 		top: 0;
+	}
+	&._active::before,
+	&._active::after {
+		background-color: #fff;
 	}
 	&._active::before {
 		top: 9px;
@@ -101,6 +103,7 @@ $col: #00b5ab;
 .main-screen {
 	min-height: 100vh;
 	position: relative;
+	z-index: 1;
 	&__bg {
 		position: absolute;
 		width: 100%;
