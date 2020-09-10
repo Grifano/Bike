@@ -13,31 +13,82 @@
 }
 .menu {
   display: flex;
-  height: 85px;
+  min-height: 85px;
   justify-content: center;
   overflow: auto;
-  &__list {
+  &__column {
     display: flex;
     align-items: center;
+    flex: 1 1 50%;
+    &:first-child {
+      padding: 0px 110px 0px 0px;
+      justify-content: flex-end;
+    }
+    &:last-child {
+      padding: 0px 0px 0px 110px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      &:first-child,
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
     &_l {
-      margin: 0px 110px 0px 0px;
       li {
+        margin: 0px 17.5px;
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          background-color: $menuColor;
+          position: absolute;
+          top: 50%;
+          right: -17.5px;
+          margin: -1.5px 0px 0px 0px;
+        }
         &:first-child {
-          margin: 0px 35px 0px 0px;
+          margin: 0px 17.5px 0px 0px;
         }
         &:last-child {
-          margin: 0px 0px 0px 35px;
+          margin: 0px 0px 0px 17.5px;
+          &::after {
+            display: none;
+          }
         }
       }
     }
     &_r {
-      margin: 0px 0px 0px 110px;
       li {
+        margin: 0px 17.5px;
+        position: relative;
+        &::after {
+          content: "";
+          display: block;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          background-color: $menuColor;
+          position: absolute;
+          top: 50%;
+          left: -17.5px;
+          margin: -1.5px 0px 0px 0px;
+        }
         &:first-child {
-          margin: 0px 35px 0px 0px;
+          margin: 0px 17.5px 0px 0px;
+          &::after {
+            display: none;
+          }
         }
         &:last-child {
-          margin: 0px 0px 0px 35px;
+          margin: 0px 0px 0px 17.5px;
         }
       }
     }
@@ -86,7 +137,7 @@
     color: $menuColor;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 15px;
+    line-height: 20px;
     letter-spacing: 2.6px;
     @media (max-width: 767px) {
       padding: 10px;
@@ -95,7 +146,7 @@
     }
   }
   @media (max-width: 767px) {
-    padding: 180px 0px 0px 0px;
+    padding: 160px 0px 100px 0px;
     flex-direction: column;
     justify-content: flex-start;
     position: fixed;

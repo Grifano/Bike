@@ -85,7 +85,20 @@ $menuColor: #4d4959;
 //===+++/Ready to use code+++===
 //----------------------------------------
 //===+++Repeating styles+++===
-
+.main-title {
+	text-align: center;
+	color: #353738;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 3.6px;
+}
+.main-text {
+	text-align: center;
+	color: #848789;
+	font-size: 18px;
+	line-height: 34px;
+}
 //===+++/Repeating styles+++===
 //----------------------------------------
 //===+++Main styles+++===
@@ -100,10 +113,10 @@ $menuColor: #4d4959;
 .content {
 	flex: 1 0 auto;
 }
+// Main screen
 .main-screen {
 	min-height: 100vh;
 	position: relative;
-	z-index: 1;
 	&__bg {
 		position: absolute;
 		width: 100%;
@@ -118,6 +131,28 @@ $menuColor: #4d4959;
 		}
 	}
 }
+// Generation block
+.generation {
+	padding: 115px 0px 140px 0px;
+	&__icon {
+		text-align: center;
+		margin: 0px 0px 35px 0px;
+	}
+
+	&__title {
+		margin: 0px 0px 35px 0px;
+	}
+
+	&__text {
+		p {
+			margin: 0px 0px 40px 0px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+}
+// Vintage oliva
 
 //===+++/Main styles+++===
 
