@@ -21,14 +21,15 @@ $menuColor: #4d4959;
 //----------------------------------------
 //===+++Content area+++===
 .container {
-	max-width: 1260px;
+	max-width: 1130px;
 	margin: 0 auto;
 	padding: 0px 15px;
 }
 //===+++/Content area+++===
 //----------------------------------------
-//===+++Header and footer styles+++===
+//===+++Header, footer, embeded styles+++===
 @import "_header";
+@import "_slider";
 @import "_footer";
 //===+++/Header and footer styles+++===
 //****************************************
@@ -89,6 +90,7 @@ $menuColor: #4d4959;
 	text-align: center;
 	color: #353738;
 	font-size: 18px;
+	line-height: 22px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 3.6px;
@@ -126,7 +128,7 @@ $menuColor: #4d4959;
 		left: 0;
 		z-index: 1;
 		img {
-			max-width: 100%;
+			width: 100%;
 			height: 100%;
 			object-fit: cover;
 		}
@@ -139,11 +141,14 @@ $menuColor: #4d4959;
 			}
 		}
 	}
+	@media (max-width: 767px) {
+		padding: 0px 0px 57% 0px;
+	}
 }
 .small-block {
 	position: relative;
 	&__description {
-		padding: 70px 10px 95px;
+		padding: 70px 10px 55px;
 		text-align: center;
 		position: relative;
 		z-index: 1;
@@ -161,14 +166,23 @@ $menuColor: #4d4959;
 			margin: 0px 0px 0px -5px;
 			z-index: 2;
 		}
+		@media (max-width: 999px) {
+			padding: 30px 10px 25px;
+		}
 	}
 
 	&__icon {
 		margin: 0px 0px 30px 0px;
+		@media (max-width: 999px) {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 
 	&__title {
 		margin: 0px 0px 25px 0px;
+		@media (max-width: 999px) {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 
 	&__text {
@@ -185,6 +199,9 @@ $menuColor: #4d4959;
 			width: 50px;
 			height: 1px;
 			background-color: #353738;
+			@media (max-width: 999px) {
+				margin: 10px auto 0px;
+			}
 		}
 		p {
 			margin: 0px 0px 40px 0px;
@@ -195,7 +212,7 @@ $menuColor: #4d4959;
 	}
 
 	&__image {
-		padding: 0px 0px 38% 0px;
+		padding: 0px 0px 40% 0px;
 		position: relative;
 		img {
 			position: absolute;
@@ -246,10 +263,16 @@ $menuColor: #4d4959;
 	&__icon {
 		text-align: center;
 		margin: 0px 0px 35px 0px;
+		@media (max-width: 767px) {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 
 	&__title {
 		margin: 0px 0px 35px 0px;
+		@media (max-width: 767px) {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 
 	&__text {
@@ -268,6 +291,9 @@ $menuColor: #4d4959;
 .vintage {
 	&__row {
 		display: flex;
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
 	}
 	&__column {
 		flex-grow: 0;
@@ -282,6 +308,115 @@ $menuColor: #4d4959;
 	&__big-block {
 	}
 	&__small-block {
+	}
+}
+// "La Boriosa" - block
+.boriosa {
+	&__row {
+		display: flex;
+		flex-direction: row-reverse;
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+	&__column {
+		flex-grow: 0;
+		flex-shrink: 1;
+		&:first-child {
+			order: 1;
+			flex-basis: 66.666%;
+		}
+		&:last-child {
+			order: 2;
+			flex-basis: 33.333%;
+		}
+		@media (max-width: 767px) {
+			&:first-child {
+				order: 2;
+			}
+			&:last-child {
+				order: 1;
+			}
+		}
+	}
+	&__big-block {
+	}
+	&__small-block {
+	}
+}
+// "Retro Bike" - block
+.retro {
+	&__row {
+		display: flex;
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+	&__column {
+		flex: 0 1 33.333%;
+		&_big {
+			order: 1;
+		}
+		&_small {
+			order: 2;
+		}
+		@media (max-width: 767px) {
+			&:first-child {
+				order: 2;
+			}
+			&:last-child {
+				order: 1;
+			}
+		}
+	}
+	&__big-block {
+	}
+	&__small-block {
+	}
+}
+// "Twitter slider" - block
+.twitter {
+	padding: 125px 0px 70px 0px;
+	&__swiper {
+	}
+	&__twitter-slide {
+		text-align: center;
+	}
+	&__icon {
+		display: inline-block;
+		width: 32px;
+		height: 27px;
+		margin: 0px 0px 35px 0px;
+		background: url("../img/Twitter/01.png") no-repeat;
+	}
+	&__title {
+		font-family: "MyriadPro";
+		letter-spacing: 1.8px;
+		margin: 0px 0px 25px 0px;
+		a {
+			color: #353738;
+			text-transform: none;
+		}
+		span {
+			color: #848789;
+			font-weight: 300;
+			text-transform: none;
+		}
+	}
+
+	&__text {
+		margin: 0px 0px 105px 0px;
+		text-align: center;
+		color: #848789;
+		font-style: italic;
+		font-size: 24px;
+		line-height: 34px;
+		p {
+			margin: 0px 0px 30px 0px;
+			&:last-child {
+				margin: 0;
+			}
+		}
 	}
 }
 //===+++/Main styles+++===

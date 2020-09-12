@@ -121,15 +121,26 @@
     }
   }
   &__logo {
-    width: 95px;
-    height: 85px;
+    padding: 5px;
+    margin: 0px 0px 0px -52.5px;
+    width: 105px;
+    height: 95px;
     position: absolute;
     top: 35px;
     left: 50%;
-    margin: 0px 0px 0px -47.5px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
     img {
+      display: block;
       max-width: 100%;
       object-fit: contain;
+      transition: all 0.3s ease 0s;
+      transform: scale(1);
+    }
+    @media (min-width: 1023px) {
+      &:hover {
+        box-shadow: inset 0px 0px 0px 2px #64c29e;
+      }
     }
   }
   &__link {
@@ -139,6 +150,24 @@
     text-transform: uppercase;
     line-height: 20px;
     letter-spacing: 2.6px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $menuColor;
+      bottom: -5px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+      transform: scale(0);
+    }
+    @media (min-width: 1023px) {
+      &:hover::after {
+        transform: scale(1);
+      }
+    }
     @media (max-width: 767px) {
       padding: 10px;
       font-size: 26px;
