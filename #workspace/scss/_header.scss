@@ -121,27 +121,10 @@
     }
   }
   &__logo {
-    padding: 5px;
     margin: 0px 0px 0px -52.5px;
-    width: 105px;
-    height: 95px;
     position: absolute;
     top: 35px;
     left: 50%;
-    border-radius: 10px;
-    transition: all 0.3s ease 0s;
-    img {
-      display: block;
-      max-width: 100%;
-      object-fit: contain;
-      transition: all 0.3s ease 0s;
-      transform: scale(1);
-    }
-    @media (min-width: 1023px) {
-      &:hover {
-        box-shadow: inset 0px 0px 0px 2px #64c29e;
-      }
-    }
   }
   &__link {
     font-size: 13px;

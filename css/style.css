@@ -302,34 +302,10 @@ h6 {
 }
 
 .menu__logo {
-  padding: 5px;
   margin: 0px 0px 0px -52.5px;
-  width: 105px;
-  height: 95px;
   position: absolute;
   top: 35px;
   left: 50%;
-  border-radius: 10px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.menu__logo img {
-  display: block;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-@media (min-width: 1023px) {
-  .menu__logo:hover {
-    -webkit-box-shadow: inset 0px 0px 0px 2px #64c29e;
-            box-shadow: inset 0px 0px 0px 2px #64c29e;
-  }
 }
 
 .menu__link {
@@ -507,6 +483,34 @@ h6 {
 @media (max-width: 769px) {
   .burger {
     display: block;
+  }
+}
+
+.main-logo {
+  display: inline-block;
+  padding: 5px;
+  width: 105px;
+  height: 95px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.main-logo img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (min-width: 1023px) {
+  .main-logo:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 2px #64c29e;
+            box-shadow: inset 0px 0px 0px 2px #64c29e;
   }
 }
 

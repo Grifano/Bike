@@ -91,6 +91,26 @@ $s: 326px;
 //===+++/Ready to use code+++===
 //----------------------------------------
 //===+++Repeating styles+++===
+.main-logo {
+	display: inline-block;
+	padding: 5px;
+	width: 105px;
+	height: 95px;
+	border-radius: 10px;
+	transition: all 0.3s ease 0s;
+	img {
+		display: block;
+		max-width: 100%;
+		object-fit: contain;
+		transition: all 0.3s ease 0s;
+		transform: scale(1);
+	}
+	@media (min-width: 1023px) {
+		&:hover {
+			box-shadow: inset 0px 0px 0px 2px #64c29e;
+		}
+	}
+}
 .main-title {
 	text-align: center;
 	color: #353738;
@@ -507,6 +527,8 @@ body {
 	&__image-link {
 	}
 }
+// "Stay on the saddle!" - form subscrible block
+
 //===+++/Main styles+++===
 
 //****************************************

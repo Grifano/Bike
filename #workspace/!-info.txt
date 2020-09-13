@@ -4,9 +4,11 @@ D--Prepare;
 D--GitInit;
 D--Fonts;
 D--First screen:
+D--adaptive;
 D--Menu:
--Discover;
---adaptive;
+D--adaptive;
+D-Discover:
+D--adaptive;
 -Form;
 --adaptive;
 --validating;
