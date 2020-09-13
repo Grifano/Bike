@@ -16,7 +16,7 @@ $menuColor: #4d4959;
 $xl: 1023px;
 $x: 999px;
 $l: 769px;
-$m: 476px;
+$m: 426px;
 $s: 326px;
 //===+++/Variables+++===
 //----------------------------------------
@@ -106,7 +106,7 @@ $s: 326px;
 	font-size: 18px;
 	line-height: 34px;
 }
-.big-block {
+.image-link {
 	height: 100%;
 	display: block;
 	position: relative;
@@ -140,7 +140,7 @@ $s: 326px;
 	}
 	@media (min-width: 1023px) {
 		&:hover {
-			.big-block__logo {
+			.image-link__logo {
 				visibility: visible;
 				opacity: 1;
 			}
@@ -150,9 +150,9 @@ $s: 326px;
 		padding: 0px 0px 57% 0px;
 	}
 }
-.small-block {
+.description {
 	position: relative;
-	&__description {
+	&__content {
 		padding: 70px 10px 55px;
 		text-align: center;
 		position: relative;
@@ -313,7 +313,7 @@ body {
 			flex-basis: 33.333%;
 		}
 	}
-	&__big-block {
+	&__image-link {
 	}
 	&__small-block {
 	}
@@ -347,7 +347,7 @@ body {
 			}
 		}
 	}
-	&__big-block {
+	&__image-link {
 	}
 	&__small-block {
 	}
@@ -383,7 +383,7 @@ body {
 			}
 		}
 	}
-	&__big-block {
+	&__image-link {
 	}
 	&__small-block {
 	}
@@ -442,6 +442,69 @@ body {
 		@media (max-width: $m) {
 			margin: 0px 0px 25px 0px;
 		}
+	}
+}
+// "Discover the shop" - block
+.discover {
+	background-color: #282f35;
+	&__collage {
+	}
+
+	&__footer {
+		text-align: center;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 0px 65px;
+		margin: 75px 10px;
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 14px;
+		line-height: 50px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2.8px;
+		min-height: 50px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		background-color: transparent;
+		transition: all 0.3s ease 0s;
+		@media (min-width: 1023px) {
+			&:hover {
+				background-color: rgba(100, 194, 158, 0.6);
+			}
+		}
+		@media (max-width: $l) {
+			margin: 35px 20px;
+		}
+		@media (max-width: $m) {
+			margin: 25px 20px;
+			padding: 0px 35px;
+			font-size: 16px;
+		}
+	}
+}
+.collage {
+	&__row {
+		min-height: 535px;
+		display: flex;
+		@media (max-width: $l) {
+			flex-direction: column;
+		}
+	}
+
+	&__column {
+		flex: 1 1 33.333%;
+		display: flex;
+		flex-direction: column;
+	}
+	&__images-row {
+		height: 100%;
+		display: flex;
+	}
+	&__item {
+		flex: 1 1 50%;
+	}
+	&__image-link {
 	}
 }
 //===+++/Main styles+++===
