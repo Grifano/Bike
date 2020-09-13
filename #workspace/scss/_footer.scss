@@ -1,0 +1,105 @@
+.footer {
+	font-size: 14px;
+	font-style: italic;
+	line-height: 17.87px;
+	background-color: #f7f7f7;
+	&__row {
+		padding: 10px 0px;
+		min-height: 250px;
+		display: flex;
+		align-items: center;
+		@media (max-width: $l) {
+			flex-direction: column;
+			justify-content: space-around;
+		}
+	}
+
+	&__column {
+		flex: 1 1 33.333%;
+		@media (max-width: $l) {
+			flex: 0 1 auto;
+		}
+	}
+
+	&__address {
+		color: #848789;
+		white-space: nowrap;
+		@media (max-width: $l) {
+			text-align: center;
+		}
+		p {
+			&:first-child {
+				font-style: normal;
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	&__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		li {
+			margin: 7.5px;
+		}
+	}
+
+	&__link {
+		position: relative;
+		top: 0;
+		left: 0;
+		@media (min-width: 1023px) {
+			&:hover {
+				animation: bouncing 0.6s linear infinite normal running 0s;
+				@keyframes bouncing {
+					0% {
+						top: 0;
+					}
+					50% {
+						top: -3px;
+					}
+					100% {
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&__yebo-logo {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		color: #848789;
+		font-style: italic;
+		span {
+			margin: 0px 0px 0px 10px;
+			width: 55px;
+			height: 36px;
+			position: relative;
+			top: 0;
+			left: 0;
+			background: url("../img/footer/icons/LogoYEBO.png") 0 0 no-repeat;
+		}
+		@media (min-width: 1023px) {
+			&:hover {
+				span {
+					animation: bouncing 0.6s linear infinite normal running 0s;
+					@keyframes bouncing {
+						0% {
+							top: 0;
+						}
+						50% {
+							top: -3px;
+						}
+						100% {
+							top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

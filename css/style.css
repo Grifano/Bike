@@ -442,6 +442,172 @@ h6 {
   background-color: #a9afb3;
 }
 
+.footer {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 17.87px;
+  background-color: #f7f7f7;
+}
+
+.footer__row {
+  padding: 10px 0px;
+  min-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 769px) {
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+}
+
+@media (max-width: 769px) {
+  .footer__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+}
+
+.footer__address {
+  color: #848789;
+  white-space: nowrap;
+}
+
+@media (max-width: 769px) {
+  .footer__address {
+    text-align: center;
+  }
+}
+
+.footer__address p:first-child {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__social li {
+  margin: 7.5px;
+}
+
+.footer__link {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 1023px) {
+  .footer__link:hover {
+    -webkit-animation: bouncing 0.6s linear infinite normal running 0s;
+            animation: bouncing 0.6s linear infinite normal running 0s;
+  }
+  @-webkit-keyframes bouncing {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -3px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @keyframes bouncing {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -3px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+}
+
+.footer__yebo-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #848789;
+  font-style: italic;
+}
+
+.footer__yebo-logo span {
+  margin: 0px 0px 0px 10px;
+  width: 55px;
+  height: 36px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url("../img/footer/icons/LogoYEBO.png") 0 0 no-repeat;
+}
+
+@media (min-width: 1023px) {
+  .footer__yebo-logo:hover span {
+    -webkit-animation: bouncing 0.6s linear infinite normal running 0s;
+            animation: bouncing 0.6s linear infinite normal running 0s;
+  }
+  @-webkit-keyframes bouncing {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -3px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @keyframes bouncing {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -3px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+}
+
 .burger {
   display: none;
   position: fixed;

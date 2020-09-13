@@ -9,15 +9,15 @@ D--Menu:
 D--adaptive;
 D-Discover:
 D--adaptive;
--Form;
---adaptive;
---validating;
+D-Form;
+D-adaptive;
+D-validating;
 -Footer;
 --adaptive;
 
 <!-- ********************************************************* -->
 <!--!- To fix: -->
--
+- Footer: yebo link hover active on all column;
 <!-- ********************************************************* -->
 <!-- ********************************************************* -->
 <!--TODO in JS: -->
