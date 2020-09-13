@@ -3,15 +3,15 @@
 D--Prepare;
 D--GitInit;
 D--Fonts;
---First screen:
-- Cut img;
-- Make fullscreen mainblock;
---Menu:
-- Cut icon;
-- Make menu-list;
-- Adaptive;
-- Make burger;
-- Make show/hide menu mobile-screen;
+D--First screen:
+D--Menu:
+-Discover;
+--adaptive;
+-Form;
+--adaptive;
+--validating;
+-Footer;
+--adaptive;
 
 <!-- ********************************************************* -->
 <!--!- To fix: -->
@@ -22,7 +22,6 @@ D--Fonts;
 - Burger show on 200px scroling;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
-- jquery re-include!;
 - adaptive;
 - link;
 - hover;

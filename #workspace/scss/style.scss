@@ -13,6 +13,11 @@ $fontfamily: "Lato";
 //----------------------------------------
 //===+++Variables+++===
 $menuColor: #4d4959;
+$xl: 1023px;
+$x: 999px;
+$l: 769px;
+$m: 476px;
+$s: 326px;
 //===+++/Variables+++===
 //----------------------------------------
 //===+++Mixins+++===
@@ -79,7 +84,7 @@ $menuColor: #4d4959;
 	&._active span {
 		display: none;
 	}
-	@media (max-width: 767px) {
+	@media (max-width: $l) {
 		display: block;
 	}
 }
@@ -141,7 +146,7 @@ $menuColor: #4d4959;
 			}
 		}
 	}
-	@media (max-width: 767px) {
+	@media (max-width: $x) {
 		padding: 0px 0px 57% 0px;
 	}
 }
@@ -166,21 +171,21 @@ $menuColor: #4d4959;
 			margin: 0px 0px 0px -5px;
 			z-index: 2;
 		}
-		@media (max-width: 999px) {
+		@media (max-width: $x) {
 			padding: 30px 10px 25px;
 		}
 	}
 
 	&__icon {
 		margin: 0px 0px 30px 0px;
-		@media (max-width: 999px) {
+		@media (max-width: $x) {
 			margin: 0px 0px 15px 0px;
 		}
 	}
 
 	&__title {
 		margin: 0px 0px 25px 0px;
-		@media (max-width: 999px) {
+		@media (max-width: $x) {
 			margin: 0px 0px 15px 0px;
 		}
 	}
@@ -199,7 +204,7 @@ $menuColor: #4d4959;
 			width: 50px;
 			height: 1px;
 			background-color: #353738;
-			@media (max-width: 999px) {
+			@media (max-width: $x) {
 				margin: 10px auto 0px;
 			}
 		}
@@ -227,7 +232,11 @@ $menuColor: #4d4959;
 //===+++/Repeating styles+++===
 //----------------------------------------
 //===+++Main styles+++===
-
+body {
+	&._lock {
+		overflow: hidden;
+	}
+}
 .wrapper {
 	width: 100%;
 	min-height: 100%;
@@ -263,14 +272,13 @@ $menuColor: #4d4959;
 	&__icon {
 		text-align: center;
 		margin: 0px 0px 35px 0px;
-		@media (max-width: 767px) {
+		@media (max-width: $x) {
 			margin: 0px 0px 15px 0px;
 		}
 	}
-
 	&__title {
 		margin: 0px 0px 35px 0px;
-		@media (max-width: 767px) {
+		@media (max-width: $x) {
 			margin: 0px 0px 15px 0px;
 		}
 	}
@@ -283,7 +291,7 @@ $menuColor: #4d4959;
 			}
 		}
 	}
-	@media (max-width: 767px) {
+	@media (max-width: $x) {
 		padding: 45px 0px 40px 0px;
 	}
 }
@@ -291,7 +299,7 @@ $menuColor: #4d4959;
 .vintage {
 	&__row {
 		display: flex;
-		@media (max-width: 767px) {
+		@media (max-width: $x) {
 			flex-direction: column;
 		}
 	}
@@ -315,7 +323,7 @@ $menuColor: #4d4959;
 	&__row {
 		display: flex;
 		flex-direction: row-reverse;
-		@media (max-width: 767px) {
+		@media (max-width: $x) {
 			flex-direction: column;
 		}
 	}
@@ -330,7 +338,7 @@ $menuColor: #4d4959;
 			order: 2;
 			flex-basis: 33.333%;
 		}
-		@media (max-width: 767px) {
+		@media (max-width: $x) {
 			&:first-child {
 				order: 2;
 			}
@@ -348,24 +356,30 @@ $menuColor: #4d4959;
 .retro {
 	&__row {
 		display: flex;
-		@media (max-width: 767px) {
+		@media (max-width: $l) {
 			flex-direction: column;
 		}
 	}
 	&__column {
 		flex: 0 1 33.333%;
-		&_big {
+		&_1 {
 			order: 1;
 		}
-		&_small {
+		&_2 {
 			order: 2;
 		}
-		@media (max-width: 767px) {
-			&:first-child {
+		&_3 {
+			order: 3;
+		}
+		@media (max-width: $l) {
+			&_1 {
 				order: 2;
 			}
-			&:last-child {
+			&_2 {
 				order: 1;
+			}
+			&_3 {
+				order: 3;
 			}
 		}
 	}
@@ -377,9 +391,15 @@ $menuColor: #4d4959;
 // "Twitter slider" - block
 .twitter {
 	padding: 125px 0px 70px 0px;
-	&__swiper {
+	position: relative;
+	background-color: #f7f7f7;
+	@media (max-width: $x) {
+		padding: 65px 0px 35px 0px;
 	}
-	&__twitter-slide {
+	@media (max-width: $m) {
+		padding: 35px 0px 15px 0px;
+	}
+	&__slide {
 		text-align: center;
 	}
 	&__icon {
@@ -403,7 +423,6 @@ $menuColor: #4d4959;
 			text-transform: none;
 		}
 	}
-
 	&__text {
 		margin: 0px 0px 105px 0px;
 		text-align: center;
@@ -416,6 +435,12 @@ $menuColor: #4d4959;
 			&:last-child {
 				margin: 0;
 			}
+		}
+		@media (max-width: $x) {
+			margin: 0px 0px 55px 0px;
+		}
+		@media (max-width: $m) {
+			margin: 0px 0px 25px 0px;
 		}
 	}
 }

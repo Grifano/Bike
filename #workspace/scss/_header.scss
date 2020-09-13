@@ -27,7 +27,7 @@
     &:last-child {
       padding: 0px 0px 0px 110px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: $l) {
       flex-direction: column;
       &:first-child,
       &:last-child {
@@ -92,7 +92,7 @@
         }
       }
     }
-    @media (max-width: 767px) {
+    @media (max-width: $l) {
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -163,18 +163,18 @@
       transition: all 0.3s ease 0s;
       transform: scale(0);
     }
-    @media (min-width: 1023px) {
+    @media (min-width: $xl) {
       &:hover::after {
         transform: scale(1);
       }
     }
-    @media (max-width: 767px) {
+    @media (max-width: $l) {
       padding: 10px;
       font-size: 26px;
       color: #ffffff;
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: $l) {
     padding: 160px 0px 100px 0px;
     flex-direction: column;
     justify-content: flex-start;

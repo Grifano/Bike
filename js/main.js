@@ -10,11 +10,7 @@ function burgerIcon() {
 //****************************************
 // === #Slider ===
 var mySwiper = new Swiper('.swiper-container', {
-	// Optional parameters
-	direction: 'horizontal',
 	loop: true,
-	speed: 600,
-	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
