@@ -528,7 +528,71 @@ body {
 	}
 }
 // "Stay on the saddle!" - form subscrible block
-
+.stay-on {
+	padding: 110px 10px 0px;
+	max-width: 555px;
+	margin: 0 auto;
+	text-align: center;
+	@media (max-width: $l) {
+		padding: 40px 10px 0px;
+	}
+	&__logo {
+		margin: 0px 0px 40px 0px;
+		@media (max-width: $l) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	&__title {
+		margin: 0px 0px 35px 0px;
+		color: #848789;
+		font-size: 24px;
+		line-height: 34px;
+		font-style: italic;
+		@media (max-width: $l) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	&__form {
+		margin: 0px 0px 110px 0px;
+		@media (max-width: $l) {
+			margin: 0px 0px 40px 0px;
+		}
+	}
+}
+.form {
+	display: inline-flex;
+	width: 100%;
+	@media (max-width: $m) {
+		flex-direction: column;
+	}
+	&__input {
+		min-height: 70px;
+		flex: 1 1 100%;
+		padding: 0px 30px;
+		color: #d3d7d9;
+		font-size: 20px;
+		font-style: italic;
+		line-height: 24px;
+		border: 1px solid #d3d7d9;
+		&::placeholder {
+			color: #d3d7d9;
+		}
+		@media (max-width: $m) {
+			margin: 0px 0px 20px 0px;
+			min-height: 50px;
+		}
+	}
+	&__submit {
+		padding: 0px 45px;
+		color: #fff;
+		font-size: 24px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 50px;
+		text-transform: uppercase;
+		background-color: #64c29e;
+	}
+}
 //===+++/Main styles+++===
 
 //****************************************

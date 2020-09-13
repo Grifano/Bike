@@ -99,6 +99,22 @@ input::-ms-clear {
   display: none;
 }
 
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
 button {
   cursor: pointer;
 }
@@ -1079,4 +1095,114 @@ body._lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+}
+
+.stay-on {
+  padding: 110px 10px 0px;
+  max-width: 555px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 769px) {
+  .stay-on {
+    padding: 40px 10px 0px;
+  }
+}
+
+.stay-on__logo {
+  margin: 0px 0px 40px 0px;
+}
+
+@media (max-width: 769px) {
+  .stay-on__logo {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.stay-on__title {
+  margin: 0px 0px 35px 0px;
+  color: #848789;
+  font-size: 24px;
+  line-height: 34px;
+  font-style: italic;
+}
+
+@media (max-width: 769px) {
+  .stay-on__title {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.stay-on__form {
+  margin: 0px 0px 110px 0px;
+}
+
+@media (max-width: 769px) {
+  .stay-on__form {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+.form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+@media (max-width: 426px) {
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.form__input {
+  min-height: 70px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding: 0px 30px;
+  color: #d3d7d9;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 24px;
+  border: 1px solid #d3d7d9;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #d3d7d9;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #d3d7d9;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #d3d7d9;
+}
+
+.form__input::placeholder {
+  color: #d3d7d9;
+}
+
+@media (max-width: 426px) {
+  .form__input {
+    margin: 0px 0px 20px 0px;
+    min-height: 50px;
+  }
+}
+
+.form__submit {
+  padding: 0px 45px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  background-color: #64c29e;
 }

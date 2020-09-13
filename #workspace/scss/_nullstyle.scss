@@ -45,6 +45,9 @@ textarea {
 input::-ms-clear {
   display: none;
 }
+input:focus::placeholder {
+  opacity: 0;
+}
 button {
   cursor: pointer;
 }
