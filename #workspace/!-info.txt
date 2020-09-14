@@ -27,7 +27,7 @@ D--adaptive;
 D- adaptive;
 D- link;
 D- hover;
-- add more content for testing block;
+D- add more content for testing block;
 - walidator;
 - loading speed;
 - crosbrausers;

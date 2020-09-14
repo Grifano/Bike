@@ -25,9 +25,11 @@
 		color: #848789;
 		white-space: nowrap;
 		@media (max-width: $l) {
+			white-space: normal;
 			text-align: center;
 		}
 		p {
+			max-width: 240px;
 			&:first-child {
 				font-style: normal;
 				font-size: 16px;
