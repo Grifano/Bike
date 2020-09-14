@@ -25,8 +25,8 @@ D--adaptive;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
 D- adaptive;
-- link;
-- hover;
+D- link;
+D- hover;
 - add more content for testing block;
 - walidator;
 - loading speed;

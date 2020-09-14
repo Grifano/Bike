@@ -357,7 +357,7 @@ h6 {
           transform: scale(0);
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1023px) and (max-height: 1366px) {
   .menu__link:hover::after {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -694,7 +694,7 @@ h6 {
           transform: scale(1);
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1023px) and (max-height: 1366px) {
   .main-logo:hover {
     -webkit-box-shadow: inset 0px 0px 0px 2px #64c29e;
             box-shadow: inset 0px 0px 0px 2px #64c29e;
@@ -763,7 +763,7 @@ h6 {
      object-fit: cover;
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1023px) and (max-height: 1366px) {
   .image-link:hover .image-link__logo {
     visibility: visible;
     opacity: 1;
@@ -1206,7 +1206,7 @@ body._lock {
   transition: all 0.3s ease 0s;
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1023px) and (max-height: 1366px) {
   .discover__link:hover {
     background-color: rgba(100, 194, 158, 0.6);
   }
