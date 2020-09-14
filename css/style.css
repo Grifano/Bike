@@ -95,6 +95,14 @@ textarea {
   font-family: "Lato";
 }
 
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 input::-ms-clear {
   display: none;
 }
@@ -569,18 +577,15 @@ h6 {
   font-style: italic;
 }
 
-.footer__yebo-logo span {
+.footer__yebo-logo a {
   margin: 0px 0px 0px 10px;
-  width: 55px;
-  height: 36px;
   position: relative;
   top: 0;
   left: 0;
-  background: url("../img/footer/icons/LogoYEBO.png") 0 0 no-repeat;
 }
 
 @media (min-width: 1023px) {
-  .footer__yebo-logo:hover span {
+  .footer__yebo-logo a:hover {
     -webkit-animation: bouncing 0.6s linear infinite normal running 0s;
             animation: bouncing 0.6s linear infinite normal running 0s;
   }

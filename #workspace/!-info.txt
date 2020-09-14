@@ -10,10 +10,10 @@ D--adaptive;
 D-Discover:
 D--adaptive;
 D-Form;
-D-adaptive;
-D-validating;
--Footer;
---adaptive;
+D--adaptive;
+D--validating;
+D-Footer;
+D--adaptive;
 
 <!-- ********************************************************* -->
 <!--!- To fix: -->
@@ -24,7 +24,7 @@ D-validating;
 - Burger show on 200px scroling;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
-- adaptive;
+D- adaptive;
 - link;
 - hover;
 - add more content for testing block;
