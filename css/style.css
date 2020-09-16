@@ -1381,4 +1381,5 @@ body._lock {
   line-height: 50px;
   text-transform: uppercase;
   background-color: #64c29e;
+  cursor: pointer;
 }
