@@ -25,6 +25,11 @@ $s: 326px;
 //===+++/Mixins+++===
 //----------------------------------------
 //===+++Content area+++===
+body {
+	&._lock {
+		overflow: hidden;
+	}
+}
 .container {
 	max-width: 1130px;
 	margin: 0 auto;
